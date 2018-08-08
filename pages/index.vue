@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        my-website
+        Michael Crane
       </h1>
       <h2 class="subtitle">
-        personal website
+        Recent Computer Science Graduate
       </h2>
       <div class="links">
         <a
