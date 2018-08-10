@@ -1,12 +1,12 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
+      <ProfilePic/>  
       <h1 class="title">
         Michael Crane
       </h1>
       <h2 class="subtitle">
-        Recent Computer Science Graduate
+        Computer Science 
       </h2>
       <div class="links">
         <a
@@ -14,7 +14,7 @@
           target="_blank"
           class="button--green">Documentation</a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/mbcrane"
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+import ProfilePic from '~/components/ProfilePic.vue'
 
 export default {
   components: {
-    AppLogo
+   ProfilePic
   }
 }
 </script>
