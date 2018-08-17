@@ -1,7 +1,16 @@
 <template>
   <section class="container">
+    
+   <div class = 'navbar'>
+        <navbar/>
+   </div> 
+      
+   <div class = "pic">
+    
+    </div>
+      <ProfilePic/>
     <div>
-      <ProfilePic/>  
+      
       <h1 class="title">
         Michael Crane
       </h1>
@@ -22,17 +31,24 @@
   </section>
 </template>
 
+
+
 <script>
 import ProfilePic from '~/components/ProfilePic.vue'
+import navbar from '~/components/navbar.vue'
 
 export default {
   components: {
-   ProfilePic
+   ProfilePic,
+   navbar
   }
 }
 </script>
 
 <style>
+    
+
+    
 .container {
   min-height: 100vh;
   display: flex;
@@ -40,7 +56,22 @@ export default {
   align-items: center;
   text-align: center;
 }
+    
+.pic{
+   height:auto;
+   width: auto;
+}
 
+.navbar{
+   display: flex;
+   justify-content: center;
+   align-items: baseline;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+    
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
