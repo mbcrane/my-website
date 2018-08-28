@@ -13,10 +13,10 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-   
+   plugins: ['~plugins/vue-scrollto.js'],
     // bootstrap vue
     modules: [
-    'bootstrap-vue/nuxt'//,
+    'bootstrap-vue/nuxt'
 /*
     // Or if you have custom bootstrap CSS...
     ['bootstrap-vue/nuxt', { css: false }],
