@@ -1,23 +1,29 @@
 <template>
   <section class="container">
     
+<!-- Navbar -->
    <div class = 'navbar'>
         <navbar/>
+      
    </div> 
       
-   <div class = "pic">
-    
-    </div>
-      <ProfilePic/>
-    <div>
+   <!-- Headline/Pic -->
       
-      <h1 class="title">
-        Michael Crane
-      </h1>
-      <h2 class="subtitle">
-        Computer Science 
-      </h2>
-      <div class="links">
+    <div class = "headline">
+     <div class = "pic">
+    <ProfilePic/>
+       
+    </div>
+   <h1 class="title">
+      I’m Michael Crane, a recent computer science graduate currently looking for experience as a
+      <a class="github_link" target="_blank" href="https://github.com/mbcrane"> software developer</a>.
+    </h1>
+    </div>
+      
+      
+      <!-- 
+    <div class="links">
+       
         <a
           href="https://nuxtjs.org/"
           target="_blank"
@@ -27,7 +33,24 @@
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
-    </div>
+      --> 
+      
+      
+      
+    <!-- Projects -->
+   <div class = "projects">
+    
+       Project div!
+    
+   </div>
+      
+    <!-- Contact -->
+   <div class = "contact">
+    
+       Contact div!
+    
+   </div>
+      
   </section>
 </template>
 
@@ -50,18 +73,14 @@ export default {
 
     
 .container {
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-top: 200px;
 }
-    
-.pic{
-   height:auto;
-   width: auto;
-}
-
+   
 .navbar{
    display: flex;
    justify-content: center;
@@ -71,26 +90,69 @@ export default {
    left: 0;
    right: 0;
 }
+  
+
     
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.pic{
+   display: flex;
+   align-self: flex-start;
+   height:auto;
+   width: auto;
+
+}
+    
+.headline{
+   display: flex;
+   align-self: flex-start;
+   height:auto;
+   width: auto;
+   margin: 20px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+/* headline style */
+/*headline title*/
+.title { 
+ position: relative;
+  max-width: 840px;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  letter-spacing: -1px;
+  line-height: 1.7;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
-.links {
-  padding-top: 15px;
+.github_link {
+  color: lightblue;
+  transition: color 250ms ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darkblue;
+  }
 }
+
+
+/* Project Styling */
+    
+.projects{
+    display: flex;
+    background-color: lightblue;    
+    height: 1000px;
+    width: 150%;
+    margin: 20px;
+}
+    
+/* Contact Styling */
+
+.contact{
+    display: flex;
+    background-color: lightblue;
+    height: 200px;
+    width: 150%;
+    margin: 20px;
+}
+    
 </style>
 
