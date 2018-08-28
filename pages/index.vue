@@ -1,9 +1,9 @@
 <template>
-  <section class="container">
+  <section id = "aboutHeader" class="container">
     
 <!-- Navbar -->
    <div class = 'navbar'>
-        <navbar/>
+        <navbar/>     
       
    </div> 
       
@@ -40,14 +40,14 @@
     <!-- Projects -->
    <div class = "projects">
     
-       Project div!
+       <h1 id = "projectHeader"> Projects</h1>
     
    </div>
       
     <!-- Contact -->
    <div class = "contact">
     
-       Contact div!
+       <h1 id = "contactHeader"> Contact</h1>
     
    </div>
       
@@ -58,13 +58,15 @@
 
 <script>
 import ProfilePic from '~/components/ProfilePic.vue'
-import navbar from '~/components/navbar.vue'
+import navbar from '~/components/navbar.vue' 
 
 export default {
   components: {
    ProfilePic,
    navbar
   }
+    
+    
 }
 </script>
 

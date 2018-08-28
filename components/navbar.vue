@@ -1,22 +1,20 @@
 <template>
   <div>
   <b-nav>
-    <b-nav-item disabled href="https://github.com/mbcrane">
+    <b-nav-item active href="#" v-scroll-to="'#aboutHeader'">
+        About
+    </b-nav-item>
+    <b-nav-item active href="#" v-scroll-to="'#projectHeader'">
+        Projects
+    </b-nav-item>
+    <b-nav-item active href="#" v-scroll-to="'#contactHeader'">
         Contact
-    </b-nav-item>
-    <b-nav-item active href="http://cartogram4all.herokuapp.com/app/index.html#DIVISION">
-        Cartograms
-    </b-nav-item>
-    <b-nav-item active href="https://mbcrane.github.io/WorkplaceDeaths/ ">
-        OSHA Visualization
-    </b-nav-item>
-    <b-nav-item active href="https://mbcrane.github.io/OregonMapping-/">
-       Population Density 
     </b-nav-item>
   </b-nav>
 </div>
 
 <!-- navbar-dropdown-1.vue -->
 </template>
+
 
 
