@@ -39,15 +39,29 @@
       
     <!-- Projects -->
    <div class = "projects">
-    
-       <h1 id = "projectHeader"> Projects</h1>
+       <h1 id = "projectHeader"> </h1>
+       <div class = "project_item">
+          <img src="~/static/cartograms.png" alt = "Cartograms 4 All"> 
+          <b-button class = "button" variant="primary" href="http://cartogram4all.herokuapp.com/app/index.html#DIVISION">Cartograms 4 All</b-button>
+           <p class = "description">Test ttest test</p>
+       </div>
+       <div class = "project_item">
+          <img src="~/static/osha.png" alt = "OSHA Visualization">
+          <b-button class = "button" variant="primary" href="https://mbcrane.github.io/WorkplaceDeaths/ ">OSHA Visualization</b-button>
+       </div>
+       <div class = "project_item">
+          <img src="~/static/oregon.png" alt = "Oregon Population Density"> 
+          <b-button class = "button" variant="primary" href="https://mbcrane.github.io/OregonMapping-/">Population Density</b-button>
+       </div>
+       
+       
     
    </div>
       
     <!-- Contact -->
    <div class = "contact">
     
-       <h1 id = "contactHeader"> Contact</h1>
+       <h1 id = "contactHeader"></h1>
     
    </div>
       
@@ -139,11 +153,39 @@ export default {
 /* Project Styling */
     
 .projects{
-    display: flex;
+    display: relative;
     background-color: lightblue;    
     height: 1000px;
-    width: 150%;
+    width: 100%;
     margin: 20px;
+    
+}
+    
+.project_item{
+    margin: 20px;
+    max-width: 100%;
+    height: 300px; 
+     display: flex;
+    justify-content: left;
+    overflow: hidden
+
+}
+    
+.project_item img {
+    flex-shrink: 0;
+    max-width:100%;
+    max-height:100%;
+    
+}
+    
+.button{
+   margin: auto;
+   margin-bottom: 20%;
+   align-self: center; 
+}
+    
+.description{
+  align-self: center;
 }
     
 /* Contact Styling */
@@ -152,7 +194,7 @@ export default {
     display: flex;
     background-color: lightblue;
     height: 200px;
-    width: 150%;
+    width: 100%;
     margin: 20px;
 }
     
