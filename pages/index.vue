@@ -38,20 +38,40 @@
       
       
     <!-- Projects -->
-   <div class = "projects">
-       <h1 id = "projectHeader"> </h1>
+   <div class = "projects" id = "projectHeader">
+       
+       
        <div class = "project_item">
-          <img src="~/static/cartograms.jpg" alt = "Cartograms 4 All"> 
-          <b-button class = "button" variant="primary" href="http://cartogram4all.herokuapp.com/app/index.html#DIVISION">Cartograms 4 All</b-button>
-           <p class = "description">Test ttest test</p>
+            <img src="~/static/cartograms.jpg" alt = "Cartograms 4 All"> 
        </div>
-       <div class = "project_item">
-          <img src="~/static/osha.jpg" alt = "OSHA Visualization">
-          <b-button class = "button" variant="primary" href="https://mbcrane.github.io/WorkplaceDeaths/ ">OSHA Visualization</b-button>
+       
+       <div class = "project_desc">
+              <b-button class = "button" variant="primary" href="http://cartogram4all.herokuapp.com/app/index.html#DIVISION">
+          Cartograms 4 All</b-button>
+          <p class = "description">Test ttest test</p> 
        </div>
+           
+           
+    
+       
        <div class = "project_item">
-          <img src="~/static/oregon.jpg" alt = "Oregon Population Density"> 
-          <b-button class = "button" variant="primary" href="https://mbcrane.github.io/OregonMapping-/">Population Density</b-button>
+           <img src="~/static/osha.jpg" alt = "OSHA Visualization"> 
+       </div>
+       
+       <div class = "project_desc">
+           <b-button class = "button" variant="primary" href="https://mbcrane.github.io/WorkplaceDeaths/ ">
+          OSHA Visualization</b-button>
+           <p class = "description">Test ttest test</p> 
+       </div>
+       
+       <div class = "project_item">
+           <img src="~/static/oregon.jpg" alt = "Oregon Population Density"> 
+       </div>
+       
+        <div class = "project_desc">
+           <b-button class = "button" variant="primary" href="https://mbcrane.github.io/OregonMapping-/">
+           Population Density</b-button> 
+            <p class = "description">Test ttest test</p> 
        </div>
        
        
@@ -63,16 +83,15 @@
        <h1 id = "contact_header"> Let's Connect!</h1>
        <div class = "contact_item">
           
-          <b-button class = "button" variant="primary" href="https://www.linkedin.com/in/mbcrane/">LinkedIn</b-button>
+          <b-button class = "contact_button" variant="primary" href="https://www.linkedin.com/in/mbcrane/"
+                    style="margin-right:25px; margin-left:40px; float: left" >LinkedIn</b-button>
+            <b-button class = "contact_button" variant="primary" href="mailto:michael.crane96@gmail.com" style="float: left;">e-Mail</b-button>
           
        </div>
-       <div class = "contact_item">
-          
-          <b-button class = "button" variant="primary" href="mailto:michael.crane96@gmail.com">e-Mail</b-button>
-          
-       </div>
+      
     
    </div>
+            
       
   </section>
 </template>
@@ -159,68 +178,91 @@ export default {
 
 
 /* Project Styling */
+  
     
 .projects{
-    display: relative;
-    background-color: lightblue;    
-    height: 1000px;
-    width: 100%;
-    margin: 20px;
-    
+ /*   display: relative; */
+  /*  background-color: lightblue; */    
+   height: 1000px;
+   width: 100%;
+   margin: 20px;     
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   flex-flow: row wrap;
+   align-content: center;
+   padding-top: 100px;
+   
 }
     
-.project_item{
-    margin: 20px;
-    max-width: 100%;
-    height: 300px; 
-     display: flex;
-    justify-content: left;
-    overflow: hidden
 
+.project_item, .project_desc{
+    height: 100px;
+    width: 50%;
+    height: 33%;
+    flex-basis: 45%;
+    margin: 10px;
+    background-color: lightblue;
+    padding: 10px;
+    padding-top: 30px;
 }
+    
+
     
 .project_item img {
+    
     flex-shrink: 0;
     max-width:100%;
     max-height:100%;
     
 }
     
+    
 .button{
    margin: auto;
-   margin-bottom: 20%;
+   margin-top: 15%;
    align-self: center; 
 }
     
 .description{
-  align-self: center;
+    margin-top: 10%;
+    align-self: center;
 }
     
 /* Contact Styling */
 
 .contact{
-    display: flex;
-    background-color: lightblue;
-    height: 200px;
-    width: 100%;
-    margin: 20px;
+   padding-top: 75px;
+   padding-bottom: 75px;
+   display: flex; 
+   align-items: left;
+   justify-content: left;
+   flex-flow: column;
+   align-content: left;
+   width: 100%;
+   height: 400px;
 }
     
 #contact_header{
     color: black;
-    padding: 10px;
+    margin: 10px;
+    padding-left: 30px;
    /* text-shadow: 3px 2px white; */
-    padding-left: 20px;
+    height: 50px;
     text-align: left;
         
 }
 
 .contact_item{
-    margin: 20px;
-    justify-content: left;
-    display: flex;
-    align-self: center;
+    width: 100%;
+    height: 30%;
+    padding-top: 25px;
+    
    
+}
+
+.contact_button{
+    align-self: center;
 }
     
 </style>
