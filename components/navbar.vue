@@ -7,7 +7,7 @@
     <b-nav-item active href="#" v-scroll-to="'#projectHeader'">
         Projects
     </b-nav-item>
-    <b-nav-item active href="#" v-scroll-to="'#contactHeader'">
+    <b-nav-item active href="#" v-scroll-to="'#contact_header'">
         Contact
     </b-nav-item>
   </b-nav>

@@ -10,7 +10,7 @@
    <!-- Headline/Pic -->
       
     <div class = "headline">
-     <div class = "pic">
+     <div class = "pic" v-b-tooltip.hover title="Hi!">
     <ProfilePic/>
        
     </div>
@@ -41,16 +41,16 @@
    <div class = "projects">
        <h1 id = "projectHeader"> </h1>
        <div class = "project_item">
-          <img src="~/static/cartograms.png" alt = "Cartograms 4 All"> 
+          <img src="~/static/cartograms.jpg" alt = "Cartograms 4 All"> 
           <b-button class = "button" variant="primary" href="http://cartogram4all.herokuapp.com/app/index.html#DIVISION">Cartograms 4 All</b-button>
            <p class = "description">Test ttest test</p>
        </div>
        <div class = "project_item">
-          <img src="~/static/osha.png" alt = "OSHA Visualization">
+          <img src="~/static/osha.jpg" alt = "OSHA Visualization">
           <b-button class = "button" variant="primary" href="https://mbcrane.github.io/WorkplaceDeaths/ ">OSHA Visualization</b-button>
        </div>
        <div class = "project_item">
-          <img src="~/static/oregon.png" alt = "Oregon Population Density"> 
+          <img src="~/static/oregon.jpg" alt = "Oregon Population Density"> 
           <b-button class = "button" variant="primary" href="https://mbcrane.github.io/OregonMapping-/">Population Density</b-button>
        </div>
        
@@ -60,8 +60,17 @@
       
     <!-- Contact -->
    <div class = "contact">
-    
-       <h1 id = "contactHeader"></h1>
+       <h1 id = "contact_header"> Let's Connect!</h1>
+       <div class = "contact_item">
+          
+          <b-button class = "button" variant="primary" href="https://www.linkedin.com/in/mbcrane/">LinkedIn</b-button>
+          
+       </div>
+       <div class = "contact_item">
+          
+          <b-button class = "button" variant="primary" href="mailto:michael.crane96@gmail.com">e-Mail</b-button>
+          
+       </div>
     
    </div>
       
@@ -103,7 +112,6 @@ export default {
    align-items: baseline;
    position: fixed;
    top: 0;
-   left: 0;
    right: 0;
 }
   
@@ -196,6 +204,23 @@ export default {
     height: 200px;
     width: 100%;
     margin: 20px;
+}
+    
+#contact_header{
+    color: black;
+    padding: 10px;
+   /* text-shadow: 3px 2px white; */
+    padding-left: 20px;
+    text-align: left;
+        
+}
+
+.contact_item{
+    margin: 20px;
+    justify-content: left;
+    display: flex;
+    align-self: center;
+   
 }
     
 </style>

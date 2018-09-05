@@ -1,6 +1,6 @@
 <template>
    <div class="ProfilePicture">
-      <img src="~/static/profilepic.png" alt="Michael Crane" style="width:212px;height:268px;">
+      <img src="~/static/profilepic.jpg" alt="Michael Crane" style="width:212px;height:268px;">
    </div>
 </template>
 
