@@ -1,11 +1,13 @@
 <template>
-  <section id = "aboutHeader" class="container">
+  <section id = "aboutHeader">
     
 <!-- Navbar -->
    <div class = 'navbar'>
         <navbar/>     
       
    </div> 
+      
+    <div class="container">
       
    <!-- Headline/Pic -->
       
@@ -42,7 +44,7 @@
        
        
        <div class = "project_item">
-            <img src="~/static/cartograms.jpg" alt = "Cartograms 4 All"> 
+            <img src="~/static/cartograms.jpg" alt = "JavaScript Data Visualization Cartograms 4 All"> 
        </div>
        
        <div class = "project_desc">
@@ -55,7 +57,7 @@
     
        
        <div class = "project_item">
-           <img src="~/static/osha.jpg" alt = "OSHA Visualization"> 
+           <img src="~/static/osha.jpg" alt = "JavaScript Data Visualization OSHA"> 
        </div>
        
        <div class = "project_desc">
@@ -65,7 +67,7 @@
        </div>
        
        <div class = "project_item">
-           <img src="~/static/oregon.jpg" alt = "Oregon Population Density"> 
+           <img src="~/static/oregon.jpg" alt = "d3 Geomapping of Oregon Population Density"> 
        </div>
        
         <div class = "project_desc">
@@ -92,7 +94,7 @@
     
    </div>
             
-      
+   </div>
   </section>
 </template>
 
@@ -126,12 +128,12 @@ export default {
 }
    
 .navbar{
-   display: flex;
-   justify-content: center;
-   align-items: baseline;
    position: fixed;
+    margin: .page-head;
+   transform: translateZ(0);
    top: 0;
    right: 0;
+   left: auto;
 }
   
 
