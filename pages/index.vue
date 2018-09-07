@@ -23,22 +23,6 @@
     </div>
       
       
-      <!-- 
-    <div class="links">
-       
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/mbcrane"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-      --> 
-      
-      
-      
     <!-- Projects -->
    <div class = "projects" id = "projectHeader">
        
@@ -50,7 +34,8 @@
        <div class = "project_desc">
               <b-button class = "button" variant="primary" href="http://cartogram4all.herokuapp.com/app/index.html#DIVISION">
           Cartograms 4 All</b-button>
-          <p class = "description">Test ttest test</p> 
+          <p class = "description">An interative data visualization that presents data from the Occupational Safety and Health Administration. It allows users to intuitively interact with unfamiliar data through an informative and insightful story. It was built using JavaScript, HTML, and CSS, making use of the d3 JavaScript library.
+</p> 
        </div>
            
            
@@ -63,7 +48,7 @@
        <div class = "project_desc">
            <b-button class = "button" variant="primary" href="https://mbcrane.github.io/WorkplaceDeaths/ ">
           OSHA Visualization</b-button>
-           <p class = "description">Test ttest test</p> 
+           <p class = "description">A web application built for users to upload custom data sets and visualize and share them through cartograms. It provides users with a platform to discover new insights from census data in a unique and informative way. It was created with a group of five individuals for a software development class using agile developlment methodologies.</p> 
        </div>
        
        <div class = "project_item">
@@ -73,7 +58,7 @@
         <div class = "project_desc">
            <b-button class = "button" variant="primary" href="https://mbcrane.github.io/OregonMapping-/">
            Population Density</b-button> 
-            <p class = "description">Test ttest test</p> 
+            <p class = "description">A geomap visualizing the population density of Oregon. It provides viewers with compelling insights into the layout and development of the state.  It makes use of topoJSON and the d3 library to project census data onto a map of Oregon.</p> 
        </div>
        
        
@@ -133,7 +118,7 @@ export default {
    transform: translateZ(0);
    top: 0;
    right: 0;
-   left: auto;
+   
 }
   
 
@@ -204,15 +189,15 @@ export default {
     height: 33%;
     flex-basis: 45%;
     margin: 10px;
-    background-color: lightblue;
     padding: 10px;
     padding-top: 30px;
 }
     
-
+.project_item{
+    background-color: lightblue;
+}
     
-.project_item img {
-    
+.project_item img {   
     flex-shrink: 0;
     max-width:100%;
     max-height:100%;
@@ -222,13 +207,18 @@ export default {
     
 .button{
    margin: auto;
-   margin-top: 15%;
+   margin-top: 5%;
    align-self: center; 
 }
     
 .description{
     margin-top: 10%;
     align-self: center;
+    letter-spacing: -1px;
+  line-height: 1.7;
+  font-size: 1rem;
+  font-weight: 500;
+    
 }
     
 /* Contact Styling */
